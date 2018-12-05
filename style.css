@@ -1,0 +1,229 @@
+body {
+    background-color: #efeeee;
+}
+
+@font-face {
+    font-family: Ubuntu-Light;
+    src: url(fonts/Ubuntu-L.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu-Regular;
+    src: url(fonts/Ubuntu-R.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu-Medium;
+    src: url(fonts/Ubuntu-M.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Medium;
+    src: url(fonts/Raleway-Medium.ttf);
+}
+
+.preloader:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .35);
+    content: '';
+    z-index: 3;
+}
+
+.preloader:after {
+    font-family: FontAwesome;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    content: "\f110";
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    animation: fa-spin 2s infinite linear;
+}
+
+.content {
+    background-color: #fff;
+    font-family: Ubuntu-Light, Arial, sans-serif;
+    font-size: 11px;
+    color: #a5a4a4;
+}
+
+a {
+    color: #a5a4a4;
+}
+
+.list {
+    padding: 12px 0 15px;
+    position: relative;
+}
+
+.list .list-item {
+    width: 270px;
+    height: 425px;
+    border: 1px solid #efeeee;
+    margin: 35px 7px 15px;
+    position: relative;
+}
+
+.list .list-item:hover {
+    box-shadow: 0 3px 7px rgba(0, 0, 0, .35);
+    transition: all 0.5s ease;
+}
+
+.list .list-item .item-img {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #efeeee;
+    margin: -20px auto 0;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    margin-bottom: 15px;
+}
+
+.list .list-item .item-img .label-new, .label-sale {
+    position: absolute;
+    top: 113px;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: Ubuntu-Medium, Arial, sans-serif;
+    font-size: 13px;
+}
+
+.list .list-item .item-img .label-new {
+    left: 0;
+    background: #000;
+}
+
+.list .list-item .item-img .label-sale {
+    right: 0;
+    background: #ed1111;
+}
+
+.list .list-item .item-img img {
+    /*min-width: 250px;*/
+    height: 100%;
+}
+
+.list .list-item .item-content {
+    padding: 0 10px;
+}
+
+.list .list-item .item-content .price {
+    font-family: Ubuntu-Regular, Arial, sans-serif;
+}
+
+.list .list-item .item-content .price .discount-price {
+    font-size: 25px;
+    color: #333;
+}
+
+.list .list-item .item-content .price .old-price {
+    color: #ed1111;
+    font-size: 17px;
+    padding: 0 0 0 20px;
+}
+
+.list .list-item .item-content .description {
+    height: 90px;
+    overflow: hidden;
+}
+
+.list .list-item .item-content .description .title {
+    font-family: Ubuntu-Regular, Arial, sans-serif;
+    font-size: 14px;
+    padding: 0 0 15px;
+    color: #333333;
+}
+
+.list .list-item .item-content .item-btns {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.custom-btn {
+    width: 117px;
+    display: inline-block;
+    padding: 10px 0;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    border: 1px solid #efeeee;
+}
+
+.custom-btn:focus {
+    outline: none;
+}
+
+.custom-btn.btn-add {
+    background: #fff;
+    color: #ed1111;
+    font-family: Ubuntu-Medium, Arial, sans-serif;
+}
+
+.custom-btn.btn-add:hover {
+    background: #ed8e8e;
+    transition: all 0.5s ease;
+}
+
+.custom-btn.btn-view {
+    background: #d9d9d9;
+    color: #999e9f;
+}
+
+.info-block-wrapper {
+    padding: 70px 0 90px;
+}
+
+.info-block-wrapper .info-block {
+    border: 1px solid #efeeee;
+    padding: 20px 25px;
+    margin-bottom: 5px;
+}
+
+.info-block-wrapper .info-block .title {
+    font-family: Raleway-Medium, Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #333333;
+}
+
+.info-block-wrapper .info-block .offers li {
+    position: relative;
+    padding: 0 0 10px 17px;
+}
+
+.info-block-wrapper .info-block .offers li:before {
+    position: absolute;
+    left: 0;
+    font-family: 'Glyphicons Halflings';
+    content: "\e250";
+    color: #ed1111;
+}
+
+.info-block-wrapper .info-block .address li {
+    padding: 0 0 16px;
+}
+
+.info-block-wrapper .info-block .address .address-icon {
+    display: inline-block;
+    width: 30px;
+}
+
+.info-block-wrapper .info-block .address .address-icon > i {
+    color: #ed1111;
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+.info-block-wrapper .info-block .address span {
+    display: inline-block;
+    vertical-align: middle;
+}
